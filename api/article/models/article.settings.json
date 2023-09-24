@@ -40,9 +40,11 @@
     "category": {
       "model": "category"
     },
+    "faculty": {
+      "model": "faculty"
+    },
     "description": {
-      "type": "text",
-      "required": true
+      "type": "text"
     }
   }
 }

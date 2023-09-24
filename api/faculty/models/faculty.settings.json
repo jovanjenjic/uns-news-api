@@ -50,6 +50,10 @@
       "type": "string",
       "required": true,
       "default": "Novi Sad"
+    },
+    "articles": {
+      "via": "faculties",
+      "collection": "article"
     }
   }
 }

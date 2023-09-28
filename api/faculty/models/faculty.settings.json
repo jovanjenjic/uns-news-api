@@ -54,6 +54,10 @@
     "articles": {
       "via": "faculties",
       "collection": "article"
+    },
+    "shortTitle": {
+      "type": "string",
+      "maxLength": 6
     }
   }
 }

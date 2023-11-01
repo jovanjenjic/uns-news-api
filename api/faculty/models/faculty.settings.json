@@ -31,11 +31,6 @@
       "plugin": "upload",
       "required": false
     },
-    "bgColor": {
-      "type": "string",
-      "required": true,
-      "default": "white"
-    },
     "url": {
       "type": "string",
       "private": false,

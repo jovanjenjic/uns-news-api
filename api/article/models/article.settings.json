@@ -49,6 +49,18 @@
     },
     "description": {
       "type": "text"
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "main": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

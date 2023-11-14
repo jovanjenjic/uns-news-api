@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertisements",
+  "info": {
+    "name": "Advertisement",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 40
+    },
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 40
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "cities": {
+      "collection": "city",
+      "via": "advertisements",
+      "dominant": true
+    }
+  }
+}

@@ -49,6 +49,11 @@
       "collection": "city",
       "via": "advertisements",
       "dominant": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

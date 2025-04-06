@@ -61,6 +61,11 @@
     "main": {
       "type": "boolean",
       "default": false
+    },
+    "createdDate": {
+      "type": "date",
+      "default": "2025-04-06T10:00:00.000Z",
+      "required": true
     }
   }
 }
